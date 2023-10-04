@@ -13,6 +13,7 @@
 		261003992ACDB12F001F5E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261003982ACDB12F001F5E28 /* Assets.xcassets */; };
 		2610039C2ACDB12F001F5E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2610039A2ACDB12F001F5E28 /* LaunchScreen.storyboard */; };
 		261003A52ACDCB9D001F5E28 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 261003A42ACDCB9D001F5E28 /* SwiftSoup */; };
+		261003AE2ACDD4F5001F5E28 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 261003AD2ACDD4F5001F5E28 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				261003A52ACDCB9D001F5E28 /* SwiftSoup in Frameworks */,
+				261003AE2ACDD4F5001F5E28 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			name = "Sidae-Bapsang";
 			packageProductDependencies = (
 				261003A42ACDCB9D001F5E28 /* SwiftSoup */,
+				261003AD2ACDD4F5001F5E28 /* Alamofire */,
 			);
 			productName = "Sidae-Bapsang";
 			productReference = 2610038C2ACDB12E001F5E28 /* Sidae-Bapsang.app */;
@@ -115,6 +118,7 @@
 			mainGroup = 261003832ACDB12E001F5E28;
 			packageReferences = (
 				261003A32ACDCB9D001F5E28 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				261003AC2ACDD4F5001F5E28 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 2610038D2ACDB12E001F5E28 /* Products */;
 			projectDirPath = "";
@@ -368,6 +372,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		261003AC2ACDD4F5001F5E28 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -375,6 +387,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 261003A32ACDCB9D001F5E28 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
+		};
+		261003AD2ACDD4F5001F5E28 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 261003AC2ACDD4F5001F5E28 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
