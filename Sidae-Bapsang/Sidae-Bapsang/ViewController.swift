@@ -7,13 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        DispatchQueue.global().async {
+            CrawlManager.crawlStudentUnionMenu()
+        }
+        
+//        CrawlManager.crawlName()
     }
-
-
 }
+
+
+
 
